@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#footer-container{
+    margin-top: auto;
+    width: 100%;
+}
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+    color: white;
+    padding: 100px 0;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.error-msg {
+    color: red;
+    font-size: 0.85rem;
+    display: none;
+}
+/* --- NATIVE APP UI FOR MOBILE SCREENS --- */
+@media (max-width: 768px) {
+    body {
+        background-color: #f2f4f7; /* Slightly darker background to make white cards pop */
+    }
+    
+    .skill-card {
+        border-radius: 20px !important; /* Much rounder corners like iOS/Android apps */
+        border: none !important;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.06) !important; /* Softer, wider shadow */
+        margin-bottom: 24px;
+        padding: 5px; /* Gives the text some breathing room inside the card */
+    }
+
+    .skill-card h5 {
+        font-size: 1.25rem;
+    }
+
+    .skill-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* Make buttons larger and easier to tap with a thumb */
+    .skill-card .btn {
+        padding: 12px;
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 1.05rem;
+    }
+
+    /* Adjust container padding for mobile edge-to-edge feel */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

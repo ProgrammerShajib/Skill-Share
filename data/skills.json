@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Advanced Web Development",
+    "provider": "Sajib Barua",
+    "category": "Programming",
+    "description": "Learn HTML, CSS, JS, and responsive design."
+  },
+  {
+    "id": 2,
+    "title": "Data Structures in C++",
+    "provider": "John Doe",
+    "category": "Computer Science",
+    "description": "Master trees, graphs, and algorithms."
+  },
+  {
+    "id": 3,
+    "title": "Data Structures in Python",
+    "provider": "John Doe",
+    "category": "Computer Science",
+    "description": "Master trees, graphs, and algorithms."
+  }
+]

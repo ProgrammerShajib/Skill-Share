@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">🎓 Premier SkillShare</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="exploreDropdown">
+            <li><a class="dropdown-item" href="skills.html">Browse All Skills</a></li>
+            <li><a class="dropdown-item" href="skill-details.html">Skill Details (Demo)</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="blog.html">Student Blog</a></li>
+            <li><a class="dropdown-item" href="notices.html">Notices (XML)</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="supportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About & Support
+          </a>
+          <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="supportDropdown">
+            <li><a class="dropdown-item" href="about.html">Our Mission</a></li>
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item auth-guest">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item auth-guest">
+          <a class="nav-link btn btn-light text-primary ms-lg-3 px-4 fw-bold rounded-pill mt-2 mt-lg-0" href="register.html">Sign Up</a>
+        </li>
+        
+        <li class="nav-item dropdown auth-logged-in" style="display:none;">
+          <a class="nav-link dropdown-toggle text-warning fw-bold" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Account
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0" aria-labelledby="accountDropdown">
+            <li><a class="dropdown-item" href="dashboard.html">Dashboard (CRUD)</a></li>
+            <li><a class="dropdown-item" href="profile.html">My Public Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#" id="logoutBtn">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
