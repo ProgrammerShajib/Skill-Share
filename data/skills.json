@@ -1,23 +1,232 @@
-[
+ [
   {
     "id": 1,
     "title": "Advanced Web Development",
     "provider": "Sajib Barua",
     "category": "Programming",
-    "description": "Learn HTML, CSS, JS, and responsive design."
+    "description": "Learn HTML, CSS, JS, and responsive design from scratch to advanced level. Build real-world projects.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+    "fileUrl": "https://websitesetup.org/wp-content/uploads/2020/09/HTML-Cheat-Sheet.pdf"
   },
   {
     "id": 2,
     "title": "Data Structures in C++",
     "provider": "John Doe",
     "category": "Computer Science",
-    "description": "Master trees, graphs, and algorithms."
+    "description": "Master trees, graphs, and algorithms to ace your technical interviews.",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=RBSGKlAvoiM",
+    "fileUrl": "https://www.cs.swarthmore.edu/~meeden/cs35/s15/Notes/cpp.pdf"
   },
   {
     "id": 3,
-    "title": "Data Structures in Python",
-    "provider": "John Doe",
-    "category": "Computer Science",
-    "description": "Master trees, graphs, and algorithms."
+    "title": "Graphic Design Basics",
+    "provider": "Jane Smith",
+    "category": "Design",
+    "description": "Learn core design theory principles, typography, and color matching.",
+    "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=z0FfHx14v5g",
+    "fileUrl": "https://www.designorate.com/wp-content/uploads/2015/08/Principles-of-Design.pdf"
+  },
+  {
+    "id": 4,
+    "title": "React.js for Beginners",
+    "provider": "Emily Carter",
+    "category": "Programming",
+    "description": "Build modern web apps using React, components, and hooks.",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+    "fileUrl": "https://roadmap.sh/pdfs/frontend.pdf"
+  },
+  {
+    "id": 5,
+    "title": "Node.js Backend Development",
+    "provider": "Michael Lee",
+    "category": "Programming",
+    "description": "Create APIs and backend services with Node.js and Express.",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+    "fileUrl": "https://raw.githubusercontent.com/manojprabham/NodeJS-Cheat-Sheet/master/nodejs-cheatsheet.pdf"
+  },
+  {
+    "id": 6,
+    "title": "UI/UX Design Fundamentals",
+    "provider": "Sophia Turner",
+    "category": "Design",
+    "description": "Understand user experience, wireframing, and interface design.",
+    "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=y9-sBP3CzTc",
+    "fileUrl": "https://static.googleusercontent.com/media/www.google.com/en//design/files/Google_Design_Principles_v1.pdf"
+  },
+  {
+    "id": 7,
+    "title": "Python for Data Science",
+    "provider": "David Wilson",
+    "category": "Data Science",
+    "description": "Analyze data, use Pandas, and build models using Python.",
+    "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=LHBE6Q9XlzI",
+    "fileUrl": "https://raw.githubusercontent.com/donnemartin/data-science-ipython-notebooks/master/data/scikit-learn-cheatsheet.pdf"
+  },
+  {
+    "id": 8,
+    "title": "Machine Learning Basics",
+    "provider": "Aisha Rahman",
+    "category": "Artificial Intelligence",
+    "description": "Learn supervised and unsupervised learning techniques.",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+    "fileUrl": "https://raw.githubusercontent.com/ujjwalkarn/Machine-Learning-Tutorials/master/Naive-Bayes-and-SVM.pdf"
+  },
+  {
+    "id": 9,
+    "title": "Digital Marketing Strategy",
+    "provider": "Robert Brown",
+    "category": "Marketing",
+    "description": "Master SEO, social media, and online ad campaigns.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=H77abdS92Uo",
+    "fileUrl": "https://www.digiteum.com/wp-content/uploads/2020/11/Digital-Marketing-Trends-2021.pdf"
+  },
+  {
+    "id": 10,
+    "title": "Photography Masterclass",
+    "provider": "Olivia White",
+    "category": "Photography",
+    "description": "Learn lighting, composition, and editing skills.",
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=GxHwOerMksE",
+    "fileUrl": "https://www.canon.com.au/-/media/project/canonical/canon-com-au/pdfs/cheat-sheets/photography-cheat-sheet.pdf"
+  },
+  {
+    "id": 11,
+    "title": "Mobile App Development",
+    "provider": "Daniel Kim",
+    "category": "Programming",
+    "description": "Build Android and iOS apps using Flutter.",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=VPvVD8t02U8",
+    "fileUrl": "https://riptutorial.com/Download/flutter-documentation.pdf"
+  },
+  {
+    "id": 12,
+    "title": "Cybersecurity Essentials",
+    "provider": "Nadia Ahmed",
+    "category": "Security",
+    "description": "Understand network security threats and protection methods.",
+    "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=1GqrhQkF7bg",
+    "fileUrl": "https://www.professormesser.com/wp-content/uploads/2020/01/SY0-601-Official-Objectives.pdf"
+  },
+  {
+    "id": 13,
+    "title": "Blockchain Fundamentals",
+    "provider": "Alex Morgan",
+    "category": "Technology",
+    "description": "Learn how blockchain technology and cryptocurrencies work.",
+    "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=SSo_EIwHSd4",
+    "fileUrl": "https://bitcoin.org/bitcoin.pdf"
+  },
+  {
+    "id": 14,
+    "title": "Public Speaking Skills",
+    "provider": "Sarah Johnson",
+    "category": "Personal Development",
+    "description": "Improve confidence, body language, and communication skills.",
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=eEa2MDFSDmg",
+    "fileUrl": "https://www.bu.edu/sarcom/files/2013/07/Public-Speaking-Tips.pdf"
+  },
+  {
+    "id": 15,
+    "title": "Startup Business Fundamentals",
+    "provider": "Chris Evans",
+    "category": "Business",
+    "description": "Learn how to launch, validate, and grow a startup.",
+    "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=2LAhR7gCPkc",
+    "fileUrl": "https://web.stanford.edu/class/e140/e140a/downloads/LeanStartup.pdf"
+  },
+  {
+    "id": 16,
+    "title": "Content Writing Mastery",
+    "provider": "Linda Green",
+    "category": "Writing",
+    "description": "Create engaging blogs, SEO articles, and web content.",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=HcVRzoIABIg",
+    "fileUrl": "https://cdn3.wpengine.com/wp-content/uploads/2021/06/Content-Writing-Template.pdf"
+  },
+  {
+    "id": 17,
+    "title": "Video Editing with Premiere Pro",
+    "provider": "Carlos Diaz",
+    "category": "Video Production",
+    "description": "Edit professional videos, add transitions, and color grade.",
+    "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=FIkO7p6KJ9Q",
+    "fileUrl": "https://helpx.adobe.com/pdf/premiere_pro_reference.pdf"
+  },
+  {
+    "id": 18,
+    "title": "Game Development with Unity",
+    "provider": "Kevin Park",
+    "category": "Game Development",
+    "description": "Build 2D and 3D games using the Unity engine and C#.",
+    "image": "https://images.unsplash.com/photo-1556438064-2d7646166914?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=gB1F9G0JXOo",
+    "fileUrl": "https://docs.unity3d.com/2019.4/Documentation/Manual/UnityManual.pdf"
+  },
+  {
+    "id": 19,
+    "title": "Cloud Computing with AWS",
+    "provider": "Jason Miller",
+    "category": "Cloud",
+    "description": "Deploy scalable applications on AWS cloud infrastructure.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=Ia-UEYYR44s",
+    "fileUrl": "https://d1.awsstatic.com/whitepapers/architecture/AWS-Well-Architected-Framework.pdf"
+  },
+  {
+    "id": 20,
+    "title": "Time Management Techniques",
+    "provider": "Emma Taylor",
+    "category": "Productivity",
+    "description": "Boost productivity with the Eisenhower Matrix and Pomodoro.",
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=iONDebHX9qk",
+    "fileUrl": "https://www.mindtools.com/aBK0Ssv/time-management-eisenhower-matrix.pdf"
+  },
+  {
+    "id": 21,
+    "title": "Illustration for Beginners",
+    "provider": "Hannah Scott",
+    "category": "Art",
+    "description": "Learn drawing fundamentals, shading, and digital illustration.",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=V9F3LdUaJpE",
+    "fileUrl": "https://www.scribbleartwork.com/wp-content/uploads/2020/02/Drawing-Exercises-for-Beginners.pdf"
+  },
+  {
+    "id": 22,
+    "title": "SQL and Database Design",
+    "provider": "Mark Peterson",
+    "category": "Database",
+    "description": "Design relational databases and write complex SQL queries.",
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+    "fileUrl": "https://www.learncsql.com/wp-content/uploads/2020/07/SQL-Cheat-Sheet.pdf"
+  },
+  {
+    "id": 23,
+    "title": "Ethical Hacking Basics",
+    "provider": "Rashid Khan",
+    "category": "Security",
+    "description": "Learn penetration testing, Kali Linux, and ethical hacking tools.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+    "videoUrl": "https://www.youtube.com/watch?v=3Kq1MIfTWCE",
+    "fileUrl": "https://www.offensive-security.com/metasploit-unleashed/pdf/metasploit-unleashed.pdf"
   }
 ]

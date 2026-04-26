@@ -1,63 +1,323 @@
+/* ==========================================
+   COMPLETE PREMIUM WARM THEME
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAF5EF;
+    color: #5D4E42;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
-#footer-container{
-    margin-top: auto;
-    width: 100%;
-}
-.hero-section {
-    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-    color: white;
-    padding: 100px 0;
-}
-.skill-card:hover {
-    transform: translateY(-5px);
+
+#footer-container { margin-top: auto; width: 100%; }
+
+/* --- GLOBAL TEXT & LINKS --- */
+a { color: #D4530A; text-decoration: none; transition: all 0.3s ease; }
+a:hover { color: #7C3AED; }
+h1, h2, h3, h4, h5, h6 { color: #2D2420; font-weight: 700; }
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+.navbar-premium {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(45, 36, 32, 0.04);
+    padding: 0.8rem 0;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-.error-msg {
-    color: red;
-    font-size: 0.85rem;
-    display: none;
+.navbar-premium .nav-link {
+    color: #5D4E42 !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+    position: relative;
 }
-/* --- NATIVE APP UI FOR MOBILE SCREENS --- */
-@media (max-width: 768px) {
-    body {
-        background-color: #f2f4f7; /* Slightly darker background to make white cards pop */
+.navbar-premium .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    bottom: 0; left: 50%;
+    background: linear-gradient(45deg, #D4530A, #7C3AED);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+.navbar-premium .nav-link:hover::after,
+.navbar-premium .nav-link.active::after { width: 20px; }
+
+.navbar-premium .dropdown-menu {
+    border: 1px solid rgba(45, 36, 32, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    padding: 1rem;
+    margin-top: 0.5rem !important;
+}
+.navbar-premium .dropdown-item {
+    border-radius: 10px;
+    color: #5D4E42;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+}
+.navbar-premium .dropdown-item:hover {
+    background: #FAF5EF;
+    color: #D4530A;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.footer-premium { 
+    background: #F0E7DD; 
+}
+.footer-link-custom {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.footer-link-custom:hover { 
+    color: #D4530A !important; 
+    transform: translateX(5px); 
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+.btn-premium {
+    background: linear-gradient(45deg, #D4530A, #FF6B35);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.6rem 1.8rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(212, 83, 10, 0.3);
+    transition: all 0.3s ease;
+}
+.btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 83, 10, 0.4);
+    color: #fff;
+}
+
+/* ==========================================
+   FORMS & INPUTS
+   ========================================== */
+.form-control, .form-select {
+    background-color: #fff;
+    border: 1px solid #E7DDD4;
+    color: #2D2420;
+    border-radius: 12px;
+    padding: 0.8rem 1.2rem;
+    transition: all 0.3s ease;
+}
+.form-control:focus, .form-select:focus {
+    border-color: #D4530A;
+    box-shadow: 0 0 0 4px rgba(212, 83, 10, 0.08);
+}
+.form-label { color: #5D4E42; font-weight: 600; font-size: 0.9rem; }
+.error-msg { color: #DC2626; font-size: 0.85rem; display: none; }
+
+/* ==========================================
+   BEAUTIFUL SEARCH BAR & FILTER
+   ========================================== */
+.modern-input-group {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(45, 36, 32, 0.06);
+    border: none;
+    overflow: hidden;
+}
+.modern-input-group .input-group-text {
+    background: #fff;
+    border: none;
+    padding-left: 1.5rem;
+    color: #D4530A; 
+    font-size: 1.2rem;
+}
+.modern-input-group .form-control {
+    border: none;
+    box-shadow: none !important;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+}
+
+.modern-select {
+    background-color: #fff;
+    border: none !important;
+    border-radius: 16px;
+    padding: 1rem 3rem 1rem 1.5rem !important;
+    box-shadow: 0 8px 24px rgba(45, 36, 32, 0.06);
+    font-size: 1rem;
+    font-weight: 500;
+    appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235D4E42' d='M6 8L1 3h10z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    cursor: pointer;
+}
+.modern-select:focus {
+    box-shadow: 0 8px 24px rgba(212, 83, 10, 0.15) !important;
+}
+
+/* ==========================================
+   PERFECT COURSE BOX LAYOUT
+   ========================================== */
+.skill-card-box {
+    background: #fff;
+    border: 1px solid #e0dbd5; 
+    border-radius: 20px;
+    overflow: hidden; 
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+.skill-card-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(45, 36, 32, 0.15);
+    border-color: rgba(212, 83, 10, 0.3); 
+}
+
+.skill-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block; 
+    transition: transform 0.6s ease;
+}
+.skill-card-box:hover .skill-img {
+    transform: scale(1.05);
+}
+
+.skill-details {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.view-btn {
+    background: linear-gradient(45deg, #D4530A, #7C3AED);
+    color: white;
+    border-radius: 50px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+}
+.view-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+    color: white;
+}
+
+/* ==========================================
+   INDEX PAGE SPECIFICS
+   ========================================== */
+.hero-premium {
+    background: linear-gradient(135deg, #D4530A 0%, #7C3AED 100%);
+    padding-top: 100px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-premium::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+}
+.hero-visual-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+    transition: transform 0.5s ease;
+}
+.hero-visual-box:hover { transform: perspective(1000px) rotateY(0deg) rotateX(0deg); }
+
+.card-premium {
+    background: #fff;
+    border: 1px solid rgba(45, 36, 32, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(45, 36, 32, 0.03);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card-premium:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(45, 36, 32, 0.08);
+    border-color: transparent;
+}
+
+.icon-box-premium {
+    width: 70px; height: 70px;
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* ==========================================
+   TABLES, MODALS, MISC
+   ========================================== */
+.table { color: #5D4E42; --bs-table-bg: transparent; }
+.table-hover tbody tr:hover { background-color: rgba(212, 83, 10, 0.03); }
+.table-dark { --bs-table-bg: #2D2420; color: #fff; border-color: rgba(255,255,255,0.1); }
+
+.modal-content { 
+    border: none; 
+    border-radius: 20px; 
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1); 
+}
+
+/* Owner Profile Link Hover Style */
+.profile-link-hover { 
+    transition: all 0.2s ease;
+    color: #2D2420 !important; /* Keeps text dark initially */
+    font-weight: 700;
+    text-decoration: none !important;
+}
+.profile-link-hover:hover { 
+    color: #D4530A !important; 
+    text-decoration: underline !important; 
+}
+
+/* ==========================================
+   SUPER RESPONSIVE MOBILE
+   ========================================== */
+@media (max-width: 991.98px) {
+    #navbarNav {
+        background: #fff;
+        margin: 1rem -1rem 0 -1rem;
+        padding: 1.5rem;
+        border-radius: 0 0 24px 24px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.06);
     }
+    .navbar-premium .nav-link::after { display: none; }
+}
+
+@media (max-width: 767.98px) {
+    .hero-premium { padding-top: 80px; padding-bottom: 60px; }
+    .hero-visual-box { display: none; }
     
-    .skill-card {
-        border-radius: 20px !important; /* Much rounder corners like iOS/Android apps */
-        border: none !important;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.06) !important; /* Softer, wider shadow */
-        margin-bottom: 24px;
-        padding: 5px; /* Gives the text some breathing room inside the card */
+    .modern-input-group, .modern-select {
+        border-radius: 12px !important;
     }
+}
 
-    .skill-card h5 {
-        font-size: 1.25rem;
+/* FIX FOR VERY SMALL SCREENS (iPhone SE 320px) */
+@media (max-width: 340px) {
+    .navbar-premium .navbar-brand {
+        font-size: 1.1rem !important;
     }
-
-    .skill-card p {
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
-
-    /* Make buttons larger and easier to tap with a thumb */
-    .skill-card .btn {
-        padding: 12px;
-        border-radius: 12px;
-        font-weight: bold;
-        font-size: 1.05rem;
-    }
-
-    /* Adjust container padding for mobile edge-to-edge feel */
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
+    .navbar-premium .navbar-toggler {
+        padding: 0.2rem 0.4rem;
     }
 }
