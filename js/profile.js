@@ -10,7 +10,6 @@ function initProfilePage() {
         targetUser = users.find(u => u.name.toLowerCase() === profileName.toLowerCase()); 
         if (!targetUser) targetUser = { name: profileName, photo: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png", bio: "" }; 
     } else { alert("Please log in."); window.location.href = 'login.html'; return; }
-    
     document.title = `${targetUser.name} | SkillShare`; 
     $('#profile-name').text(targetUser.name); 
     $('#profile-pic').attr('src', targetUser.photo); 

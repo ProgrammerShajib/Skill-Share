@@ -25,3 +25,43 @@ function deleteSkill(id) {
         renderDashboardTable(currentUser.name); 
     }
 }
+
+// NEW: RENDER MESSAGES RECEIVED BY THIS INSTRUCTOR
+function renderMessagesTable(instructorName) {
+    let messages = JSON.parse(localStorage.getItem('allMessages')) || [];
+    // Filter messages sent TO this specific user
+    let myMessages = messages.filter(m => m.toInstructor === instructorName);
+    
+    let html = '';
+    if (myMessages.length === 0) { 
+        html = `<tr><td colspan="4" class="text-center py-4 text-muted">No messages received yet.</td></tr>`; 
+    } else { 
+        // Sort by newest first
+        myMessages.reverse().forEach(msg => { 
+            let formattedDate = new Date(msg.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+            html += `
+            <tr>
+                <td class="ps-4">
+                    <div class="fw-semibold">${msg.fromStudent}</div>
+                    <div class="text-muted small">Re: ${msg.skillTitle}</div>
+                </td>
+                <td style="max-width: 300px;">${msg.message}</td>
+                <td class="text-muted small">${formattedDate}</td>
+                <td class="text-center pe-4">
+                    <button class="btn btn-sm btn-outline-danger rounded-pill px-3" onclick="deleteMessage(${msg.id})"><i class="bi bi-trash3"></i></button>
+                </td>
+            </tr>`; 
+        }); 
+    }
+    $('#messages-table-body').html(html);
+}
+
+function deleteMessage(id) {
+    if (confirm("Delete this message?")) { 
+        let messages = JSON.parse(localStorage.getItem('allMessages')) || []; 
+        messages = messages.filter(m => m.id !== id); 
+        localStorage.setItem('allMessages', JSON.stringify(messages)); 
+        let currentUser = JSON.parse(localStorage.getItem('currentUser')); 
+        renderMessagesTable(currentUser.name); 
+    }
+}

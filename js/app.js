@@ -1,4 +1,4 @@
-console.log("VERSION 7.0 - MODULAR JS LOADED!");
+console.log("VERSION 7.1 - MESSAGING SYSTEM ADDED!");
 
 // NAVBAR AUTH CHECK
 function checkAuthStatus() {
@@ -74,8 +74,14 @@ function checkAuthStatus() {
         let currentUser = JSON.parse(localStorage.getItem('currentUser'));
         if (!currentUser) { alert("You must log in first."); window.location.href = 'login.html'; return; }
         $('#welcome-msg').text(`Welcome, ${currentUser.name}!`);
+        
+        // Render Skills Table
         renderDashboardTable(currentUser.name);
 
+        // NEW: Render Messages Table
+        renderMessagesTable(currentUser.name);
+
+        // Handle Skill Submission Form
         $('#crudForm').submit(function (e) {
             e.preventDefault();
             let skills = JSON.parse(localStorage.getItem('allSkills')) || [];
